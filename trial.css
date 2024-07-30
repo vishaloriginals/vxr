@@ -158,36 +158,48 @@ body{
     height: 3px;
     background-color: #252838;
 }
+.form {
+    position: relative;
+}
 .feedback {
-    height: 100px;
-    width: 690px;
+    height: 55px;
+    width: 670px;
     font-size: 40px;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-left: 80px;
     border: 3px solid #252838;
-    border-radius: 10px;
+    border-radius: 30px;
     font-family: 'ICA Rubrik';
     padding: 50 50px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #32364f;
+    padding-right: 110px;
+    margin-bottom: 80px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    color: white;
+    z-index: 1000;
 }
 .b1 {
     position: absolute;
-    height: 110px;
-    width: 110px;
-    background-color: #252838;
-    margin-top: 50px;
-    border: 3px solid #1a1e33;
-    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: #32364f;
+    margin-top: 65px;
+    border-radius: 30px;
+    right: 100px;
+    border: none;
+    z-index: 1011;
 }
 .send {
     position: absolute;
-    height: 110px;
-    width: 110px;
-    top: -5%;
+    height: 100px;
+    width: 100px;
+    top: -0%;
     left: -5%;
 }
 .nexp {
-    height: 30vh;
+    height: 20vh;
     max-width: 90vw;
     background-color: #c8c8c8;
     top: 50%;
@@ -199,16 +211,60 @@ body{
     font-size: 36px;
     color: #252838;
     margin-top: 50px;
+    font-family: 'ICA Rubrik';
 }
 .c2 {
+    display: flex;
     font-size: 50px;
     text-align: center;
+    justify-content: center;
     color: #252838;
+    top: 100%;
+    margin-top: 5px;
+    
 }
 .z1 {
     height: 80px;
     margin-left: 120px;
     margin-right: 120px;
     margin-top: 50px;
-    margin-bottom: 200px;
-    
+    margin-bottom: 400px;
+}
+.formcont {
+    position: fixed;
+    bottom: -30px;
+    left: 0;
+    width: 100vw;
+    z-index: 999;
+    background-color: #252838;
+    border-radius: 30px;
+}
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.fc, .fc2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 225px;
+    z-index: 998;
+    border-radius: 30px;
+    padding: 2px;
+    background-image: conic-gradient(from var(--angle), blue, green, yellow, red, blue);
+    animation: 3s spin linear infinite;
+}
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+.fc2 {
+    filter: blur(1.5rem);
+    opacity: 1;
+}
