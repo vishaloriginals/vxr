@@ -18,7 +18,6 @@ body{
     justify-content: center;
     align-items: center;
     left: 9%;
-    -webkit-text-stroke: 2px white;
 }
 .intro .in2 {
     position: absolute;
@@ -33,7 +32,8 @@ body{
 }
 .intro .in3 {
     position: absolute;
-    font-family: 'ICA Rubrik';
+    font-family: Montserrat;
+    font-weight: 100;
     font-size: 7em;
     line-height: 1em;
     color: #252838;
@@ -211,7 +211,7 @@ body{
     font-size: 36px;
     color: #252838;
     margin-top: 50px;
-    font-family: 'ICA Rubrik';
+    font-family: Lato;
 }
 .c2 {
     display: flex;
@@ -245,6 +245,7 @@ body{
     inherits: false;
 }
 .fc, .fc2 {
+    display: none;
     position: fixed;
     bottom: 0;
     left: 0;
