@@ -2,6 +2,7 @@ const form = document.getElementById('feedbackForm');
 const feedbackInput = document.getElementById('feedback');
 const fc = document.querySelector('.fc');
 const fc2 = document.querySelector('.fc2');
+const specialLink = document.getElementById('specialLink');
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -40,3 +41,15 @@ form.addEventListener('submit', async (e) => {
     }, 5000);
   }
 });
+
+specialLink.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    const password = prompt("Password Required");
+
+    if (password === '7044') {
+        window.location.href = 'bd.html'; // Redirect to spin.html if password is correct
+    } else {
+        alert('Incorrect password. Please try again.');
+    }
+});
+
