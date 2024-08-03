@@ -1,0 +1,205 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('sin.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; /* Keeps background image fixed */
+    font-family: 'Montserrat', sans-serif;
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+.a {
+    margin-top: 100px;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+    margin-bottom: 100px;
+    margin-left: 20px; /* 20px from the left side */
+    margin-right: auto; /* Moves the div to the left */
+    width: calc(50% - 40px); /* 50% width minus 20px margin on each side */
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.b {
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+    margin-bottom: 100px;
+    margin-left: auto; /* Moves the div to the right */
+    margin-right: 20px; /* 20px from the right side */
+    width: calc(50% - 40px); /* 50% width minus 20px margin on each side */
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.c {
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+    margin-bottom: 100px;
+    margin-left: 20px; /* 20px from the left side */
+    margin-right: auto; /* Moves the div to the left */
+    width: calc(50% - 40px); /* 50% width minus 20px margin on each side */
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.d {
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+    margin-bottom: 100px;
+    margin-left: auto; /* Moves the div to the right */
+    margin-right: 20px; /* 20px from the right side */
+    width: calc(50% - 40px); /* 50% width minus 20px margin on each side */
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.e {
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+    margin-bottom: 100px;
+    margin-left: 20px; /* 20px from the left side */
+    margin-right: auto; /* Moves the div to the left */
+    width: calc(50% - 40px); /* 50% width minus 20px margin on each side */
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.f {
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+    margin-bottom: 100px;
+    margin-left: auto; /* Moves the div to the right */
+    margin-right: 20px; /* 20px from the right side */
+    width: calc(50% - 40px); /* 50% width minus 20px margin on each side */
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.g {
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+    margin-bottom: 100px;
+    margin-left: 20px; /* 20px from the left side */
+    margin-right: auto; /* Moves the div to the left */
+    width: calc(50% - 40px); /* 50% width minus 20px margin on each side */
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.h {
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+    margin-bottom: 100px;
+    margin-left: auto; /* Moves the div to the right */
+    margin-right: 20px; /* 20px from the right side */
+    width: calc(50% - 40px); /* 50% width minus 20px margin on each side */
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.i {
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+    margin-bottom: 100px;
+    margin-left: 20px; /* 20px from the left side */
+    margin-right: auto; /* Moves the div to the left */
+    width: calc(50% - 40px); /* 50% width minus 20px margin on each side */
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.reply {
+    width: 100vw;
+    height: 200px;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+}
+
+.feedback-container {
+    position: relative;
+    width: 68vw;
+    margin: 0 auto;
+    margin-top: 50px;
+    left: -6%;
+}
+
+.feedback {
+    height: 70px;
+    width: 100%;
+    font-size: 35px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(0,0,0,0);
+    border-radius: 50px;
+    padding-top: 30px;
+    padding-left: 2vw;
+    padding-right: 10vw;
+    color: white;
+    font-family: Montserrat;
+}
+
+.b1 {
+    position: absolute;
+    top: 48%;
+    right: -112px;
+    transform: translateY(-50%);
+    height: 90px;
+    width: 90px;
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: black;
+}
