@@ -46,7 +46,7 @@ specialLink.addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default link behavior
     const password = prompt("Password Required");
 
-    if (password === '7044') {
+    if (password === '9608400894') {
         window.location.href = 'bd.html'; // Redirect to spin.html if password is correct
     } else {
         alert('Incorrect password. Please try again.');
