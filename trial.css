@@ -8,7 +8,7 @@ body{
 }
 .intro .in1 {
     position: absolute;
-    font-family: 'ICA Rubrik';
+    font-family: Lato;
     font-size: 9em;
     line-height: 1em;
     color: #252838;
@@ -17,7 +17,7 @@ body{
     text-align: center;
     justify-content: center;
     align-items: center;
-    left: 9%;
+    left: 6%;
 }
 .intro .in2 {
     position: absolute;
@@ -107,7 +107,7 @@ body{
 }
 .banner .content h1{
     position: absolute;
-    font-family: 'ICA Rubrik';
+    font-family: Lato;
     font-size: 10em;
     line-height: 1em;
     color: #252838;
@@ -123,7 +123,7 @@ body{
 }
 .banner .content .bro{
     position: absolute;
-    font-family: 'ICA Rubrik';
+    font-family: Lato;
     font-size: 10em;
     line-height: 1em;
     color: #252838;
@@ -131,6 +131,7 @@ body{
     margin-left: 680px;
 }
 .banner .content .brocode{
+    font-family: Lato;
     position: absolute;
     inset: 0 0 0 0;
     content: attr(data-content);
@@ -139,7 +140,7 @@ body{
     z-index: 6;
     width: 100%;
     margin-top: 303px;
-    margin-left: 320px;
+    margin-left: 315px;
 }
 .banner .content .model{
     background-image: url(png.png);
@@ -199,7 +200,7 @@ body{
     left: -5%;
 }
 .nexp {
-    height: 20vh;
+    height: 30vh;
     max-width: 90vw;
     background-color: #c8c8c8;
     top: 50%;
@@ -211,7 +212,8 @@ body{
     font-size: 36px;
     color: #252838;
     margin-top: 50px;
-    font-family: Lato;
+    font-family: Quicksand;
+    font-weight: 400;
 }
 .c2 {
     display: flex;
@@ -221,7 +223,7 @@ body{
     color: #252838;
     top: 100%;
     margin-top: 5px;
-    
+    font-family: Montserrat;
 }
 .z1 {
     height: 80px;
@@ -269,3 +271,17 @@ body{
     filter: blur(1.5rem);
     opacity: 1;
 }
+.special {
+    position: absolute;
+    font-size: 45px;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #252838;
+    text-decoration: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 3px solid #252838;
+    border-radius: 30px;
+    top: 120%;
+    left: 40%;
+    
