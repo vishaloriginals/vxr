@@ -148,7 +148,7 @@ body{
     height: 80vh;
     position: absolute;
     bottom: 0%;
-    left: 5%;
+    left: -5%;
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: top-center;
