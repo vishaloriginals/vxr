@@ -2,13 +2,17 @@ const form = document.getElementById('feedbackForm');
 const feedbackInput = document.getElementById('feedback');
 const fc = document.querySelector('.fc');
 const fc2 = document.querySelector('.fc2');
-const specialLink = document.getElementById('specialLink');
+
+const modal = document.getElementById('passwordModal');
+const closeBtn = document.querySelector('.modal .close');
+const submitPasswordBtn = document.getElementById('submitPassword');
+const passwordInput = document.getElementById('passwordInput');
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const feedback = feedbackInput.value.trim();
   if (feedback) {
-    // Make .fc and .fc2 visible
+    
     fc.style.display = 'block';
     fc2.style.display = 'block';
 
@@ -34,7 +38,7 @@ form.addEventListener('submit', async (e) => {
       alert('Failed to send feedback. Please try again.');
     }
 
-    // Hide .fc and .fc2 after 5 seconds
+    
     setTimeout(() => {
       fc.style.display = 'none';
       fc2.style.display = 'none';
@@ -42,14 +46,28 @@ form.addEventListener('submit', async (e) => {
   }
 });
 
-specialLink.addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default link behavior
-    const password = prompt("Password Required");
 
-    if (password === '9608400894') {
-        window.location.href = 'bd.html'; // Redirect to spin.html if password is correct
-    } else {
-        alert('Incorrect password. Please try again.');
-    }
+
+specialLink.addEventListener('click', function(event) {
+  event.preventDefault();
+  modal.style.display = 'block';
 });
 
+closeBtn.addEventListener('click', function() {
+  modal.style.display = 'none';
+});
+
+submitPasswordBtn.addEventListener('click', function() {
+  const password = passwordInput.value;
+  if (password === '9608400894') {
+    window.location.href = 'bd.html';
+  } else {
+    alert('Incorrect password. Please try again.');
+  }
+});
+
+window.addEventListener('click', function(event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
