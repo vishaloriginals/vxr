@@ -7,12 +7,18 @@ const modal = document.getElementById('passwordModal');
 const closeBtn = document.querySelector('.modal .close');
 const submitPasswordBtn = document.getElementById('submitPassword');
 const passwordInput = document.getElementById('passwordInput');
+const specialLink = document.getElementById('specialLink');
+const modalTitle = document.getElementById('modalTitle');
+const errorMessage = document.getElementById('errorMessage');
+
+const feedbackModal = document.getElementById('feedbackModal');
+const closeFeedbackModalBtn = document.getElementById('closeFeedbackModal');
+const closeFeedbackButton = document.getElementById('closeFeedbackButton');
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const feedback = feedbackInput.value.trim();
   if (feedback) {
-    
     fc.style.display = 'block';
     fc2.style.display = 'block';
 
@@ -28,8 +34,8 @@ form.addEventListener('submit', async (e) => {
         }),
       });
       if (response.ok) {
-        alert('Feedback sent successfully!');
         feedbackInput.value = '';
+        feedbackModal.style.display = 'block';
       } else {
         alert('Failed to send feedback. Please try again.');
       }
@@ -38,15 +44,12 @@ form.addEventListener('submit', async (e) => {
       alert('Failed to send feedback. Please try again.');
     }
 
-    
     setTimeout(() => {
       fc.style.display = 'none';
       fc2.style.display = 'none';
     }, 5000);
   }
 });
-
-
 
 specialLink.addEventListener('click', function(event) {
   event.preventDefault();
@@ -62,12 +65,140 @@ submitPasswordBtn.addEventListener('click', function() {
   if (password === '9608400894') {
     window.location.href = 'bd.html';
   } else {
-    alert('Incorrect password. Please try again.');
+    modalTitle.textContent = 'Incorrect password';
+    errorMessage.textContent = '';
+    modalTitle.style.color = 'red';
+    modalTitle.style.fontWeight = '300';
+    setTimeout(() => {
+      modalTitle.textContent = 'Password Required';
+      errorMessage.textContent = '';
+      modalTitle.style.color = 'white';
+      errorMessage.style.color = 'white';
+    }, 3000);
   }
 });
 
 window.addEventListener('click', function(event) {
   if (event.target === modal) {
     modal.style.display = 'none';
+  }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const dcont = document.querySelector('.dcont');
+  const dmImage = document.getElementById('dM');
+  const banner = document.querySelector('.banner');
+  const border = document.querySelector('.dcont');
+  const nexp = document.querySelector('.nexp');
+  const linkImage = document.getElementById('linkedin');
+  const tgImage = document.getElementById('telegram');
+  const igImage = document.getElementById('instagram');
+  const imgborder1 = document.querySelector('.banner .slider .item #qwerty1');
+  const imgborder2 = document.querySelector('.banner .slider .item #qwerty2');
+  const imgborder3 = document.querySelector('.banner .slider .item #qwerty3');
+  const imgborder4 = document.querySelector('.banner .slider .item #qwerty4');
+  const imgborder5 = document.querySelector('.banner .slider .item #qwerty5');
+  const imgborder6 = document.querySelector('.banner .slider .item #qwerty6');
+  const imgborder7 = document.querySelector('.banner .slider .item #qwerty7');
+  const imgborder8 = document.querySelector('.banner .slider .item #qwerty8');
+  const imgborder9 = document.querySelector('.banner .slider .item #qwerty9');
+  const imgborder10 = document.querySelector('.banner .slider .item #qwerty10');
+  const divider = document.querySelector('.divider');
+  const special = document.querySelector('.special');
+  
+  if (!dcont || !dmImage || !banner || !tgImage) {
+    console.error('One or more elements are missing from the document.');
+    return;
+  }
+
+  let isClicked = false;
+
+  dcont.addEventListener('click', () => {
+    if (isClicked) {
+      // Revert changes
+      dmImage.classList.remove('moved');
+      dmImage.src = 'dm.png';
+      document.body.style.backgroundColor = '#c8c8c8';
+      document.querySelector('.in1').style.color = '#252838';
+      document.querySelector('.in2').style.color = '#252838';
+      document.querySelector('.in3').style.color = '#252838';
+      document.querySelector('.cssonly').style.color = '#252838';
+      document.querySelector('.c2').style.color = '#252838';
+      linkImage.src = 'linkb.png';
+      tgImage.src = 'tgb.png';
+      igImage.src = 'igb.png';
+      banner.style.background = 'linear-gradient(to bottom, #c8c8c8, rgba(200, 200, 200, 0)), url("bg.png") no-repeat center center';
+      border.style.borderColor = '#252838';
+      imgborder1.classList.remove('after');
+      imgborder2.classList.remove('after');
+      imgborder3.classList.remove('after');
+      imgborder4.classList.remove('after');
+      imgborder5.classList.remove('after');
+      imgborder6.classList.remove('after');
+      imgborder7.classList.remove('after');
+      imgborder8.classList.remove('after');
+      imgborder9.classList.remove('after');
+      imgborder10.classList.remove('after');
+      divider.style.backgroundColor = '#252838';
+      nexp.style.backgroundColor = '#c8c8c8';
+      document.querySelector('.about').style.color = '#252838';
+      special.style.color = '#252838';
+      special.style.borderColor = '#252838';
+      document.querySelector('.formcont').style.backgroundColor = '#252838';
+      document.querySelector('.feedback').style.border = '3px solid #252838';
+      document.querySelector('.blocker').style.backgroundColor = '#c8c8c8';
+      document.getElementById('qwerty1').style.borderColor = "#222222";
+    } else {
+      // Apply changes
+      dmImage.classList.add('moved');
+      dmImage.src = 'dm2.png';
+      document.body.style.backgroundColor = '#1d1f2a';
+      document.querySelector('.in1').style.color = '#c8c8c8';
+      document.querySelector('.in2').style.color = '#c8c8c8';
+      document.querySelector('.in3').style.color = '#c8c8c8';
+      document.querySelector('.cssonly').style.color = '#c8c8c8';
+      document.querySelector('.c2').style.color = '#c8c8c8';
+      linkImage.src = 'linkw.png';
+      tgImage.src = 'tgw.png';
+      igImage.src = 'igw.png';
+      banner.style.background = 'linear-gradient(to bottom, #1d1f2a, rgba(200, 200, 200, 0)), url("bg.png") no-repeat center center';
+      border.style.borderColor = '#c8c8c8';
+      document.getElementById('qwerty1').style.borderColor = "#c8c8c8";
+      imgborder1.classList.add('after');
+      imgborder2.classList.add('after');
+      imgborder3.classList.add('after');
+      imgborder4.classList.add('after');
+      imgborder5.classList.add('after');
+      imgborder6.classList.add('after');
+      imgborder7.classList.add('after');
+      imgborder8.classList.add('after');
+      imgborder9.classList.add('after');
+      imgborder10.classList.add('after');
+      divider.style.backgroundColor = '#c8c8c8';
+      nexp.style.backgroundColor = '#1d1f2a';
+      document.querySelector('.about').style.color = '#c8c8c8';
+      special.style.color = '#c8c8c8';
+      special.style.borderColor = '#c8c8c8';
+      document.querySelector('.formcont').style.backgroundColor = '#252838';
+      document.querySelector('.feedback').style.border = '1px solid #c8c8c8';
+      document.querySelector('.blocker').style.backgroundColor = '#1d1f2a';
+    }
+
+    isClicked = !isClicked;
+  });
+});
+
+// Close feedback modal
+closeFeedbackModalBtn.addEventListener('click', () => {
+  feedbackModal.style.display = 'none';
+});
+
+closeFeedbackButton.addEventListener('click', () => {
+  feedbackModal.style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+  if (event.target === feedbackModal) {
+    feedbackModal.style.display = 'none';
   }
 });
