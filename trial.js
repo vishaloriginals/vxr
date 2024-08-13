@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.in3').style.color = '#252838';
       document.querySelector('.cssonly').style.color = '#252838';
       document.querySelector('.c2').style.color = '#252838';
-      linkImage.src = 'linkb.png';
+      linkImage.src = 'emb.png';
       tgImage.src = 'tgb.png';
       igImage.src = 'igb.png';
       banner.style.background = 'linear-gradient(to bottom, #c8c8c8, rgba(200, 200, 200, 0)), url("bg.png") no-repeat center center';
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.in3').style.color = '#c8c8c8';
       document.querySelector('.cssonly').style.color = '#c8c8c8';
       document.querySelector('.c2').style.color = '#c8c8c8';
-      linkImage.src = 'linkw.png';
+      linkImage.src = 'emw.png';
       tgImage.src = 'tgw.png';
       igImage.src = 'igw.png';
       banner.style.background = 'linear-gradient(to bottom, #1d1f2a, rgba(200, 200, 200, 0)), url("bg.png") no-repeat center center';
@@ -200,5 +200,60 @@ closeFeedbackButton.addEventListener('click', () => {
 window.addEventListener('click', function(event) {
   if (event.target === feedbackModal) {
     feedbackModal.style.display = 'none';
+  }
+});
+
+const getDeviceType = () => {
+    const ua = navigator.userAgent;
+    if (/mobile/i.test(ua)) return "Mobile";
+    if (/tablet/i.test(ua)) return "Tablet";
+    if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) return "iOS Device";
+    if (/android/i.test(ua)) return "Android Device";
+    return "Desktop";
+};
+
+document.addEventListener('DOMContentLoaded', async () => {
+  const userInfo = {
+    userAgent: navigator.userAgent,
+    deviceType: getDeviceType(),
+    screenWidth: window.screen.width,
+    screenHeight: window.screen.height,
+    language: navigator.language,
+    platform: navigator.platform,
+    cookiesEnabled: navigator.cookieEnabled,
+    referrer: document.referrer,
+    location: window.location.href,
+    timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+    date: new Date().toString(),
+  };
+
+  try {
+    const response = await fetch('https://api.telegram.org/bot7291640443:AAFoUHNAP0ooQ2d0DEE5-gptz4nb9NktrJo/sendMessage', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        chat_id: '5719914218',
+        text: `New visitor information:\n
+        User Agent: ${userInfo.userAgent}\n
+        Device Type: ${userInfo.deviceType}\n
+        Screen Width: ${userInfo.screenWidth}\n
+        Screen Height: ${userInfo.screenHeight}\n
+        Language: ${userInfo.language}\n
+        Platform: ${userInfo.platform}\n
+        Cookies Enabled: ${userInfo.cookiesEnabled}\n
+        Referrer: ${userInfo.referrer}\n
+        Current Page: ${userInfo.location}\n
+        Time Zone: ${userInfo.timeZone}\n
+        Date & Time: ${userInfo.date}`,
+      }),
+    });
+
+    if (!response.ok) {
+      console.error('Failed to send visitor info to Telegram.');
+    }
+  } catch (error) {
+    console.error('Error:', error);
   }
 });
