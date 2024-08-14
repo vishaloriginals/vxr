@@ -347,6 +347,7 @@ body{
   background-color: rgba(47, 146, 43, 1);
   color: white;
   border: 1px solid rgba(0, 0, 0, 0.5);
+  margin-left: 160px;
 }
 
 .close {
@@ -490,8 +491,6 @@ body{
     font-weight: 400;
     color: white;
 }
-
-
 .sidebar {
   display: none;
   position: fixed;
@@ -524,6 +523,23 @@ body{
   display: block;
   margin: 10px 0;
 }
+
+#closeWebsiteInfo, #closeCreatorInfo {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#closeWebsiteInfo:hover, #closeCreatorInfo:hover {
+  background: #d32f2f;
+}
+
+
+
+
 
 /* Style for the three bars icon */
 #threeLinesIcon {
