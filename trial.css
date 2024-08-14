@@ -490,3 +490,190 @@ body{
     font-weight: 400;
     color: white;
 }
+
+
+.sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 10000;
+  padding: 20px;
+}
+
+.sidebar-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  height: 100%;
+}
+
+.info-box {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button {
+  display: block;
+  margin: 10px 0;
+}
+
+/* Style for the three bars icon */
+#threeLinesIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 70px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+#threeLinesIcon .sp1 {
+  display: block;
+  height: 6px;
+  background-color: #252838;
+  border-radius: 4px;
+}
+#threeLinesIcon .sp2 {
+  display: block;
+  height: 6px;
+  background-color: #252838;
+  border-radius: 4px;
+}
+#threeLinesIcon .sp3 {
+  display: block;
+  height: 6px;
+  background-color: #252838;
+  border-radius: 4px;
+}
+
+/* Sidebar */
+#sidebar {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 35px;
+  right: 35px;
+  width: 400px;
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  padding: 20px;
+  color: red;
+  border-radius: 20px;
+  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+  border: 1px solid white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  
+}
+
+/* Sidebar items */
+#sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+  font-size: 35px;
+  margin-left: 20px;
+  font-family: Montserrat;
+}
+
+#sidebar button:hover {
+  background-color: #c8c8c8;
+  color: #1d1f2a;
+}
+
+/* Info divs */
+#websiteInfo {
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 800px;
+  max-width: ;
+  padding: ;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+  z-index: 9999;
+  border-radius: 20px;
+  background-size: cover;
+  overflow: hidden;
+  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+  border: 1px solid white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+
+}
+#creatorInfo {
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 800px;
+  max-width: ;
+  padding: ;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+  z-index: 9999;
+  border-radius: 20px;
+  background-size: cover;
+  overflow: hidden;
+  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+  border: 1px solid white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  
+}
+.pp {
+    object-fit: cover;
+    border-radius: inherit;
+    position: absolute;
+    height: 400px;
+}
+
+.cinfo {
+    position: absolute;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 400;
+    padding-left: 400px;
+    line-height: 1;
+    padding-top: 50px;
+}
+.webhead {
+    position: absolute;
+    font-size: 40px;
+    font-family: Montserrat;
+    font-weight: 400;
+    padding-left: 300px;
+    top: -5%;
+}
+.webinfo {
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 400;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
