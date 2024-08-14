@@ -257,3 +257,63 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.error('Error:', error);
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const threeLinesIcon = document.getElementById('threeLinesIcon');
+  const sidebar = document.getElementById('sidebar');
+  const aboutWebsiteBtn = document.getElementById('aboutWebsiteBtn');
+  const aboutCreatorBtn = document.getElementById('aboutCreatorBtn');
+  const websiteInfo = document.getElementById('websiteInfo');
+  const creatorInfo = document.getElementById('creatorInfo');
+  const closeWebsiteInfo = document.getElementById('closeWebsiteInfo');
+  const closeCreatorInfo = document.getElementById('closeCreatorInfo');
+
+  threeLinesIcon.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent the click from propagating to the window listener
+    sidebar.style.display = sidebar.style.display === 'none' || sidebar.style.display === '' ? 'block' : 'none';
+  });
+
+  aboutWebsiteBtn.addEventListener('click', () => {
+    websiteInfo.style.display = 'block';
+    creatorInfo.style.display = 'none';
+    sidebar.style.display = 'none'; // Hide sidebar when "About Website" is clicked
+  });
+
+  aboutCreatorBtn.addEventListener('click', () => {
+    creatorInfo.style.display = 'block';
+    websiteInfo.style.display = 'none';
+    sidebar.style.display = 'none';
+  });
+
+  window.addEventListener('click', (event) => {
+    if (sidebar.style.display === 'block' && !sidebar.contains(event.target) && event.target !== threeLinesIcon) {
+      sidebar.style.display = 'none';
+    }
+    
+  if (creatorInfo.style.display === 'block' && !creatorInfo.contains(event.target) && event.target !== aboutCreatorBtn) {
+      creatorInfo.style.display = 'none';
+    }
+    
+  if (websiteInfo.style.display === 'block' && !websiteInfo.contains(event.target) && event.target !== aboutWebsiteBtn) {
+      websiteInfo.style.display = 'none';
+    }
+  });
+});
+
+// Function to calculate age
+const getAge = (birthDate) => {
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDifference = today.getMonth() - birthDate.getMonth();
+
+    if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+};
+
+// Date of birth
+const birthDate = new Date(2005, 2, 9); // 9th March 2005
+
+// Display the age
+document.getElementById('age').textContent = getAge(birthDate);
