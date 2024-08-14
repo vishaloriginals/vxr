@@ -148,6 +148,9 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.feedback').style.border = '3px solid #252838';
       document.querySelector('.blocker').style.backgroundColor = '#c8c8c8';
       document.getElementById('qwerty1').style.borderColor = "#222222";
+      document.querySelector('#threeLinesIcon .sp1').style.backgroundColor = '#252838';
+      document.querySelector('#threeLinesIcon .sp2').style.backgroundColor = '#252838';
+      document.querySelector('#threeLinesIcon .sp3').style.backgroundColor = '#252838';
     } else {
       // Apply changes
       dmImage.classList.add('moved');
@@ -182,6 +185,9 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.formcont').style.backgroundColor = '#252838';
       document.querySelector('.feedback').style.border = '1px solid #c8c8c8';
       document.querySelector('.blocker').style.backgroundColor = '#1d1f2a';
+      document.querySelector('#threeLinesIcon .sp1').style.backgroundColor = '#c8c8c8';
+      document.querySelector('#threeLinesIcon .sp2').style.backgroundColor = '#c8c8c8';
+      document.querySelector('#threeLinesIcon .sp3').style.backgroundColor = '#c8c8c8';
     }
 
     isClicked = !isClicked;
@@ -257,6 +263,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.error('Error:', error);
   }
 });
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const threeLinesIcon = document.getElementById('threeLinesIcon');
