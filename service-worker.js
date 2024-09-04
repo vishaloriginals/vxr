@@ -2,9 +2,9 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open('my-cache').then((cache) => {
       return cache.addAll([
-        '/',
-        '/trial.css',
-        '/trial.js',
+        '',
+        '/shrine.css',
+        '/shrine.js',
         'weblogo192.svg',
         'weblogo512.svg'
       ]);
