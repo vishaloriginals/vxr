@@ -1,10 +1,10 @@
 {
-  "name": "Vishaloriginals",
-  "short_name": "vishaloriginals",
-  "start_url": "/vxr",
+  "name": "vishaloriginals",
+  "short_name": "vxr",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#c8c8c8",
-  "theme_color": "#252838",
+  "background_color": "#0f0f0f",
+  "theme_color": "#000000",
   "icons": [
     {
       "src": "weblogo192.svg",
@@ -12,7 +12,7 @@
       "type": "image/svg"
     },
     {
-      "src": "weblogo192.svg",
+      "src": "weblogo512.svg",
       "sizes": "512x512",
       "type": "image/svg"
     }
