@@ -1,0 +1,610 @@
+body {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 350px), url('car.jpg');
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    height: 5500px;
+}
+
+.hero {
+    bottom: 0;
+    backdrop-filter: blur(20px);
+    border: 1px solid white;
+    height: 4600px;
+    width: 80vw;
+    margin: 10vh auto 0 auto; /* Center the hero div horizontally */
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.tophead {
+    margin-top: 40px;
+    display: flex; /* Or use a container specific layout like flexbox or grid */
+    align-items: center;
+    height: 50px; /* Adjust as needed */
+    justify-content: center;
+}
+
+.about {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-family: Montserrat;
+    font-weight: 250;
+    margin: 40px;
+}
+.website {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-family: Montserrat;
+    font-weight: 250;
+    margin: 40px;
+}
+.new {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-family: Montserrat;
+    font-weight: 250;
+    margin: 40px;
+}
+.creator {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-family: Montserrat;
+    font-weight: 250;
+    margin: 40px;
+}
+.midhead {
+    display: flex;
+    justify-content: center;
+}
+.intro {
+    color: white;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 90px;
+    margin: 10px;
+    margin-top: 14vh;
+}
+.intro2 {
+    color: white;
+    font-family: Lato;
+    font-weight: 280;
+    font-size: 90px;
+    margin: 10px;
+    margin-top: 14vh;
+}
+.midhead2 {
+    display: flex;
+    justify-content: center;
+}
+.vishal {
+    font-family: Quicksand;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    margin: 0px;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    margin-top: 100px;
+    width: 100px;
+}
+.drawing-container {
+    background-color: transparent;
+    height: 730px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    perspective: 1000px; /* Add perspective to create a 3D effect */
+}
+.drawing1 {
+    position: absolute;
+    height: 450px;
+    margin-top: 350px;
+    z-index: 1;
+    transition: transform 0.3s ease-out; /* Smooth transition for rotation */
+    margin-right: 60px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.drawing2 {
+    height: 450px;
+    margin-top: 400px;
+    z-index: 0;
+    transition: transform 0.3s ease-out; /* Smooth transition for rotation */
+    margin-left: 60px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.dtext-container {
+    margin-top: 150px;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    margin-left: 10vw;
+}
+.drawing-text {
+    color: white;
+    font-size: 35px;
+    font-family: Quicksand;
+    font-weight: 800;
+}
+.dbutton-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sa1, .sa2 {
+    display: none;
+    height: 50px;
+    width: 200px;
+    background-image: conic-gradient(from var(--angle), transparent, transparent ,red , transparent, transparent, red, transparent, transparent);
+    animation: 3s spin linear infinite;
+    padding: 2px;
+    border-radius: 10px;
+    position: absolute;
+}
+.sa2 {
+    filter: blur(2rem);
+    opacity: 1;
+}
+.dbutton:hover + .sa1,
+.dbutton:hover + .sa1 + .sa2 {
+    display: block;
+}
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.dbutton {
+    height: 50px;
+    width: 200px;
+    font-size: 35px;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid red;
+    z-index: 5;
+    background-color: black;
+    margin-top: 2px;
+}
+.example {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.ebutton {
+    width: 290px;
+    height: 50px;
+    font-size: 35px;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 600;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid red;
+    z-index: 5;
+}
+.divider2 {
+    width: 100%;
+    background-color: white;
+    height: 2px;
+    z-index: 2;
+}
+.ps-container {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ps-art {
+    height: 500px;
+    margin-right: 25px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 2;
+    border: 2px solid white;
+}
+.art-text {
+    width: 400px;
+    color: white;
+    font-size: 35px;
+    font-family: Quicksand;
+    margin-left: 25px;
+    font-weight: 800;
+    z-index: 1;
+}
+.ps-art-button {
+    width: 200px;
+    height: 50px;
+    font-size: 35px;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 600;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid red;
+    z-index: 5;
+}
+.ps-v-button {
+    width: 290px;
+    height: 50px;
+    font-size: 35px;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 600;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid red;
+    z-index: 5;
+    margin-top: 30px;
+}
+.divider3 {
+    width: 100%;
+    background-color: white;
+    height: 2px;
+    z-index: 2;
+}
+.code-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+.pc {
+    color: white;
+    height: 200px;
+    position: absolute;
+}
+.pc-text {
+    color: white;
+    font-size: 35px;
+    font-family: Quicksand;
+    font-weight: 800;
+    width: 400px;
+}
+.pc-button {
+    width: 200px;
+    height: 50px;
+    font-size: 35px;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 600;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid red;
+    z-index: 5;
+    margin-top: 30px;
+}
+.divider4 {
+    width: 100%;
+    background-color: white;
+    height: 2px;
+    z-index: 2;
+}
+.lr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+.lr {
+    color: #2F352E;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    z-index: 2;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+.lr-text {
+    width: 400px;
+    color: white;
+    font-size: 35px;
+    font-family: Quicksand;
+    margin-left: 25px;
+    font-weight: 800;
+    z-index: 1;
+}
+.lr-button {
+    width: 200px;
+    height: 50px;
+    font-size: 35px;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 600;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid red;
+    z-index: 5;
+    margin-top: 30px;
+}
+.divider5 {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+.fb-container {
+    height: 1543px;
+    background-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form {
+    height: 130px;
+    width: 900px;
+    margin-top: 100px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.feedback {
+    height: 65px;
+    width: 730px;
+    border-radius: 40px;
+    font-size: 40px;
+    font-family: Quicksand;
+    font-weight: bold;
+    background-color: transparent;
+    padding-top: 15px;
+    padding-left: 20px;
+    color: white;
+    border: 3px solid white;
+    padding-right: 100px;
+}
+.fb-send {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: transparent;
+    border: none;
+    right: 85px;
+}
+.contact-container {
+    display: flex;
+    margin-top: 200px;
+    flex-direction: column;
+    background-color: transparent;
+    width: 100%;
+    align-items: center;
+}
+.contact {
+    font-size: 45px;
+    color: white;
+    font-family: Quicksand;
+    font-weight: 400;
+    background-color: transparent;
+}
+.contact-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    margin-top: 50px;
+}
+.cu {
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.cu2 {
+    height: 90px;
+    width: 90px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.last {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    width: 100%;
+}
+.logo2 {
+    height: 250px;
+    margin-top: 200px;
+}
+.outro {
+    font-size: 30px;
+    color: white;
+    font-family: Quicksand;
+    font-weight: bold;
+}
+.thanks {
+    font-size: 40px;
+    color: white;
+    font-family: Lato;
+    font-weight: 300;
+    margin-top: 100px;
+}
+/* Overlay styling */
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.overlay-content {
+    font-family: Quicksand;
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2));
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 20px;
+    height: 400px; 
+    width: 800px;
+    border: 2px solid white;
+    text-align: center; /* Center the text */
+    position: relative; /* Position relative for close button */
+    transform: scale(0); /* Start scale at 0 for animation */
+    opacity: 0; /* Start with opacity 0 for fade effect */
+    transition: transform 0.1s ease-in, opacity 0.1s ease-in; /* Animation properties */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#creatorOverlay .overlay-content {
+    height: 400px;
+    width: 800px;
+    background-image: url('creator.png');
+    background-size: cover;
+    font-size: 30px;
+    color: white;
+}
+.a1 {
+    font-size: 30px;
+    color: white;
+    margin-top: 70px;
+}
+.creator-text {
+    top: 90px;
+    margin-left: 350px;
+    position: absolute;
+    text-align: left;
+    line-height: 30px;
+}
+.overlay-content h2 {
+    position: absolute;
+    top: -10px;
+    font-size: 40px;
+    color: white;
+}
+.overlay-content h5 {
+    font-size: 30px;
+    color: white;
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 60px;
+    color: white; /* Close button color */
+}
+
+
+/* Add animation class when overlay is open */
+.overlay.open .overlay-content {
+    transform: scale(1); /* Scale to full size */
+    opacity: 1; /* Fade in */
+}
+
+/* Styles for the overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* Styles for the overlay content */
+.overlay-content-x {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 800px;
+    height: 700px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+}
+
+/* Styles for the preset image */
+.preset-image {
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Styles for navigation buttons */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+    font-size: 60px;
+    width: 70px;
+    height: 70px;
+}
+/* Positioning for the left and right navigation buttons */
+#prevPreset {
+    left: 10px;
+}
+
+#nextPreset {
+    right: 10px;
+}
+
+/* Styles for the download button */
+.download-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid white;
+    background: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 60px;
+}
+
+/* Styles for the close button */
+.close-button {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 60px;
+}
