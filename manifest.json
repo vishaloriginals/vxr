@@ -1,7 +1,7 @@
 {
   "name": "vishaloriginals",
   "short_name": "vxr",
-  "start_url": "/",
+  "start_url": "/vxr",
   "display": "standalone",
   "background_color": "#0f0f0f",
   "theme_color": "#000000",
