@@ -1,138 +1,178 @@
 <!DOCTYPE html>
-
 <html>
+
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>vishaloriginals</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="icon" href="weblogo16.svg" sizes="16x16" type="image/svg">
-  <link rel="icon" href="weblogo32.svg" sizes="32x32" type="image/svg">
-  <link rel="icon" href="weblogo48.svg" sizes="48x48" type="image/svg">   
-  <link rel="icon" href="weblogo96.svg" sizes="96x96" type="image/svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="trial.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="weblogo16.svg" sizes="16x16" type="image/svg">
+    <link rel="icon" href="weblogo32.svg" sizes="32x32" type="image/svg">
+    <link rel="icon" href="weblogo48.svg" sizes="48x48" type="image/svg">   
+    <link rel="icon" href="weblogo96.svg" sizes="96x96" type="image/svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Lato -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Quicksand -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://icons8.com/icon/Y2GfpkgYNp42/gmail">
+    <link rel="stylesheet" href="shrine.css">
+    <title>vishaloriginals</title>
 </head>
+
 <body>
-    <div class="intro">
-        <div class="dcontmain">
-            <div class="dcont">
-                <img class="dm" id="dM" src="dm.png">
+    <header>
+        <div class="tophead">
+            <div id="aboutOverlay" class="overlay">
+                <div class="overlay-content">
+                    <span id="closeOverlay" class="close-button">&times;</span>
+                    <h2>About Us</h2>
+                    <p class="a1">This website is a personal website by vishaloriginals. For my own business purposes.</p>
+                    <p class="a1"><strong>Disclaimer: </strong>The prices that I mentioned below are only the starting prices, Prices may increase with the complexity of the work.</p>
+                </div>
             </div>
-        </div>
-        <div id="threeLinesIcon">
-            <span class="sp1"></span>
-            <span class="sp2"></span>
-            <span class="sp3"></span>
-        </div>
-
-        <div id="sidebar">
-            <button id="aboutWebsiteBtn">About Website</button>
-            <button id="aboutCreatorBtn">About Creator</button>
-        </div>
-
-        <div id="websiteInfo">
-            <h2 class="webhead">Website</h2>
-            <p class="webinfo">So guys, This website looks professional compared to other websites, Because of its professional design and looks, And because of the colours that I've used, And also because of that 3D designing I've done in this website, All I've done just using HTML, CSS and JS, nothing more than that, I've used GitHub to deploy this website online. And if you ask how muchh time it took to make it, there's no exact figure, I just made it and just updating and upgrading it designs and more. I hope I'll learn more and I'll take my website designing to the next level, Thankyou !!!</p>
-        </div>
-
-        <div id="creatorInfo">
-            <img class="pp" src="pp.png">
-            <div class="cinfo">
-                <p>Name: Vishal<br>
-                <br>
-                Age: <span id="age"></span><br>
-                <br>
-                Location: Jharkhand<br>
-                <br>
-                Qualifications: HTML/CSS/JS(Frontend Dev.) & Linux<br>
-                <br>
-                Contact: originalsvishal@gmail.com</p>
+            <div id="websiteOverlay" class="overlay">
+                <div class="overlay-content">
+                    <span class="close-button">&times;</span>
+                    <h2>Website Information</h2>
+                    <p class="a1">This website is made by a single person, not a team !!! This website only include Frontend work (HTML,CSS,Javascript), It doesn't require any backend code to run it, and this website is hosted using GitHub.</p>
+                </div>
             </div>
+            <div id="whatsNewOverlay" class="overlay">
+                <div class="overlay-content">
+                    <span class="close-button">&times;</span>
+                    <h2>What's New</h2>
+                    <p class="a1">You can order your custom sketch, photoshop art, website, and Free Lightroom presets. Enjoy !!!</p>
+                </div>
+            </div>
+            <div id="creatorOverlay" class="overlay">
+                <div class="overlay-content">
+                    <span class="close-button">&times;</span>
+                    <h2>Creator</h2>
+                    <div class="creator-text">
+                        <p><strong>Name:</strong> Vishal</p>
+                        <p><strong>Profession:</strong> Student</p>
+                        <p><strong>Skills:</strong> Frontend Developer (HTML,CSS,Javascript,) and Linux Speciaist</p>
+                        <p><strong>Location:</strong> Jharkhand, India</p>
+                    </div>
+                </div>
+            </div>
+            <a class="about" id="aboutButton">About</a>
+            <a class="website" id="websiteButton">Website</a>
+            <a class="new" id="whatsNewButton">What's new</a>
+            <a class="creator" id="creatorButton">Creator</a>
         </div>
-        <h2 class="in1">3D WEBSITE</h2>
-        <h2 class="in2">by vishaloriginals</h2>
-        <h2 class="in3">PHOTO SLIDESHOW</h2>
-    </div>
-    <div class="banner">
-        <div class="slider" style="--quantity: 10">
-            <div class="item"  style="--position: 1"><img src="img1.png" id="qwerty1" alt=""></div>
-            <div class="item"  style="--position: 2"><img src="img2.png" id="qwerty2" alt=""></div>
-            <div class="item"  style="--position: 3"><img src="img3.png" id="qwerty3" alt=""></div>
-            <div class="item"  style="--position: 4"><img src="img4.png" id="qwerty4" alt=""></div>
-            <div class="item"  style="--position: 5"><img src="img5.png" id="qwerty5" alt=""></div>
-            <div class="item"  style="--position: 6"><img src="img6.png" id="qwerty6" alt=""></div>
-            <div class="item"  style="--position: 7"><img src="img7.png" id="qwerty7" alt=""></div>
-            <div class="item"  style="--position: 8"><img src="img8.png" id="qwerty8" alt=""></div>
-            <div class="item"  style="--position: 9"><img src="img9.png" id="qwerty9" alt=""></div>
-            <div class="item"  style="--position: 10"><img src="img10.png" id="qwerty10" alt=""></div>
+        <div class="midhead">
+            <h2 class="intro">Create</h2>
+            <h2 class="intro2">More</h2>
         </div>
-        <div class="content">
-            <h1 data-content="HTML / CSS / JS" class="cssonly">
-                HTML / CSS / JS
-            </h1>
-            <div class="model"></div>
+        <div class="midhead2">
+            <h2 class="vishal">with vishaloriginals</h2>
         </div>
-    </div>
-    <div class="divider">
-        
-    </div>
-    <div class="fc2">
-        
-    </div>
-    <div class="fc">
-        
-    </div>
-    <div class="formcont">
-        <div class="colour">
+        <div class="logo-container">
+            <img src="weblogo.svg" class="logo">
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="drawing-container">
+                <img src="drawing.png" class="drawing1">
+                <img src="drawing2.png" class="drawing2">
+                <div class="divi">
+                    
+                </div>
+            </div>
+            <div class="divider1">
+                
+            </div>
+            <div class="blur-box">
             
+            </div>
+            <div class="dtext-container">
+                <h2 class="drawing-text">Get your custom handmade pencil sketch starting at just rupees 200.</h2>
+            </div>
+            <div class="dbutton-container">
+                <div class="sa1"></div>
+                <div class="sa2"></div>
+                <button class="dbutton">Get Now</button>
+            </div>
+            <div class="example">
+                <button class="ebutton">View Sketches</button>
+            </div>
+            <div class="divider2">
+                
+            </div>
+            <div class="ps-container">
+                <img src="ps-art.jpg" class="ps-art">
+                <div class="art-text">
+                    <p>Get your own custom photoshop artwork for the same amount as the sketch.</p>
+                    <button class="ps-art-button">Get Now</button>
+                    <button class="ps-v-button">View Artworks</button>
+                </div>
+            </div>
+            <div class="divider3">
+                
+            </div>
+            <div class="code-container">
+                <svg class="pc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M64 96c0-35.3 28.7-64 64-64l384 0c35.3 0 64 28.7 64 64l0 256-64 0 0-256L128 96l0 256-64 0L64 96zM0 403.2C0 392.6 8.6 384 19.2 384l601.6 0c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8L76.8 480C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"/></svg>
+                <div class="pc-text">
+                    <p>Get your own designed website starting at just rupees 400.</p>
+                    <button class="pc-button">Get Now</button>
+                </div>
+            </div>
+            <div class="divider4">
+                
+            </div>
+            <div class="lr-container">
+                <svg class="lr" fill="white" height="256px" width="256px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-50.51 -50.51 320.63 320.63" xml:space="preserve" stroke="#ffffff" stroke-width="0.00219615"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"><rect x="-50.51" y="-50.51" width="320.63" height="320.63" rx="32.063" fill="transparent" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="1.7569200000000003"></g><g id="SVGRepo_iconCarrier"> <g id="XMLID_341_"> <path id="XMLID_348_" d="M114.612,202.049c1.381,0,2.5-1.119,2.5-2.5v-34.086c0-1.381-1.119-2.5-2.5-2.5H45.743V20.066 c0-1.381-1.119-2.5-2.5-2.5H2.5c-1.381,0-2.5,1.119-2.5,2.5v179.483c0,1.381,1.119,2.5,2.5,2.5H114.612z"></path> <path id="XMLID_350_" d="M137.227,202.049h40.477c1.381,0,2.5-1.119,2.5-2.5v-66.041c0-3.101,0.267-6.143,0.744-8.536 c2.468-11.599,11.906-18.523,25.25-18.523c4.261,0,7.55,0.492,10.469,1.024c0.732,0.135,1.48-0.065,2.05-0.54 c0.569-0.475,0.898-1.178,0.898-1.919v-38.08c0-1.208-0.864-2.244-2.053-2.459c-3.148-0.573-5.216-0.573-8.969-0.573 c-11.813,0-26.042,6.602-34.17,21.142l-0.881-15.851c-0.073-1.325-1.169-2.361-2.496-2.361h-34.886c-0.684,0-1.338,0.28-1.81,0.775 c-0.472,0.495-0.72,1.161-0.688,1.844c0.561,11.779,1.063,23.912,1.063,42.754v87.346 C134.727,200.93,135.847,202.049,137.227,202.049z"></path> </g> </g></svg>
+                <div class="lr-text">
+                    <p>Get some amazing Lightroom presets made by me, to level up your colour grading for absolutely free.</p>
+                    <button class="lr-button" id="lrButton">Get Now</button>
+                </div>
+            </div>
+            <div class="divider5">
+                
+            </div>
+            <div class="fb-container">
+                <form class="form" id="feedbackForm" method="POST">
+                    <textarea name="feedback" class="feedback" id="feedback" placeholder="Feedback"></textarea>
+                    <button type="submit" class="fb-send" id="sendButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M16.1 260.2c-22.6 12.9-20.5 47.3 3.6 57.3L160 376l0 103.3c0 18.1 14.6 32.7 32.7 32.7c9.7 0 18.9-4.3 25.1-11.8l62-74.3 123.9 51.6c18.9 7.9 40.8-4.5 43.9-24.7l64-416c1.9-12.1-3.4-24.3-13.5-31.2s-23.3-7.5-34-1.4l-448 256zm52.1 25.5L409.7 90.6 190.1 336l1.2 1L68.2 285.7zM403.3 425.4L236.7 355.9 450.8 116.6 403.3 425.4z"/></svg>
+                    </button>
+                </form>
+                <div class="contact-container">
+                    <p class="contact">Contact Us</p>
+                    <div class="contact-img">
+                        <a href="mailto: originalsvishal@gmail.com"><svg class="cu" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256"><g fill="white" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M43.75391,6.40234c-1.2177,-0.05335 -2.45911,0.31055 -3.48242,1.06641l-2.74609,2.02734l-12.52539,9.25977l-12.4082,-9.17187c-0.17292,-0.16897 -0.4012,-0.26957 -0.64258,-0.2832h0.25l-2.46484,-1.82422c-1.02397,-0.75773 -2.26723,-1.12367 -3.48633,-1.07031c-1.2191,0.05336 -2.4131,0.52522 -3.33984,1.43945c-1.17726,1.16068 -1.9082,2.78413 -1.9082,4.56445v3.43359c-0.01457,0.09777 -0.01457,0.19715 0,0.29492v23.36133c0,1.92119 1.57881,3.5 3.5,3.5h7.5c0.55226,-0.00006 0.99994,-0.44774 1,-1v-16.62695l11.40625,8.43164c0.353,0.26043 0.8345,0.26043 1.1875,0l11.40625,-8.43164v16.62695c0.00006,0.55226 0.44774,0.99994 1,1h7.5c1.92119,0 3.5,-1.57881 3.5,-3.5v-23.38086c0.01129,-0.08622 0.01129,-0.17355 0,-0.25977v-3.44922c0,-1.75846 -0.70954,-3.37437 -1.87109,-4.53711c-0.03357,-0.03357 -0.04482,-0.04287 -0.03125,-0.0293c-0.00194,-0.00196 -0.0039,-0.00391 -0.00586,-0.00586c-0.92656,-0.91221 -2.12019,-1.3822 -3.33789,-1.43555zM43.64453,8.40039c0.7563,0.02965 1.48952,0.3165 2.04492,0.86328c0.01891,0.01867 0.03272,0.03277 0.02344,0.02344c0.79645,0.79726 1.28711,1.9015 1.28711,3.12305v3.08594l-8,5.91211v-10.4082c0.00042,-0.0339 -0.00088,-0.0678 -0.00391,-0.10156l2.46289,-1.82031c0.00065,0 0.0013,0 0.00195,0c0.64864,-0.47915 1.42729,-0.70739 2.18359,-0.67773zM6.35742,8.40625c0.75715,-0.02964 1.53847,0.19746 2.1875,0.67773l2.45898,1.81836c-0.00289,0.03247 -0.0042,0.06506 -0.00391,0.09766v10.4082l-8,-5.91211v-3.08594c0,-1.23567 0.50176,-2.3413 1.3125,-3.14062c0.55526,-0.54776 1.28777,-0.83364 2.04492,-0.86328zM37,12.37109v10.51563l-12,8.86914l-12,-8.86914v-10.51367l11.40625,8.43164c0.353,0.26043 0.8345,0.26043 1.1875,0zM3,17.98242l8,5.91406v17.10352h-6.5c-0.84081,0 -1.5,-0.65919 -1.5,-1.5zM47,17.98242v21.51758c0,0.84081 -0.65919,1.5 -1.5,1.5h-6.5v-17.10352z"></path></g></g></svg></a>
+                        <a href="https://t.me/vishaloriginals"><svg class="cu2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="white"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z"/></svg></a>
+                        <a href="https://www.instagram.com/vishaloriginals/profilecard/?igsh=NG9wdTlsNzV3dW04"><svg class="cu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                    </div>
+                </div>
+                <div class="last">
+                    <img class="logo2" src="weblogo.svg">
+                    <p class="outro">A website by vishaloriginals</p>
+                    <p class="thanks">Thank you for visiting !!!</p>
+                </div>
+            </div>
         </div>
-        <form class="form" id="feedbackForm" method="POST" action="submit_feedback.php">
-            <textarea name="feedback" class="feedback" id="feedback" placeholder="Feedback"></textarea>
-            <button type="submit" class="b1" id="sendButton">
-                <img src="send.png" class="send">
-            </button>
-        </form>
-    </div>
-    <div class="nexp">
-        <div class="webcontx">
-            <a class="web" id="specialLink" href="bd.html">Special</a>
+        <!-- Lightroom Presets Overlay -->
+        <div id="lrPresetsOverlay" class="overlay">
+            <div class="overlay-content-x">
+                <img id="presetImage" class="preset-image" src="preset1.dng" alt="Preset">
+                <button id="prevPreset" class="nav-button"><i id="leftRight" class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></button>
+                <button id="nextPreset" class="nav-button"><i id="leftRight" class="fa-solid fa-arrow-left fa-flip-horizontal" style="color: #ffffff;"></i></button>
+                <button id="downloadPreset" class="download-button"><i class="fa-solid fa-download" style="color: #ffffff;"></i></button>
+                <button class="close-button"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+            </div>
         </div>
-    </div>
-    
-    <h2 class="c2">Contact Us</h2>
-    <div class="contact">
-        <a href="mailto: originalsvishal@gmail.com"> <img src="emb.png" class="z1" id="linkedin"></a>
-        <a href="https://t.me/vishaloriginals"> <img src="tgb.png" class="z1" id="telegram"></a>
-        <a href="https://www.instagram.com/vishaloriginals?igsh=NG9wdTlsNzV3dW04"> <img src="igb.png" class="z1" id="instagram"></a>
-    </div>
-    <div id="passwordModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2 id="modalTitle" class="textp">Password Required</h2>
-        <input type="password" id="passwordInput" placeholder="Enter password">
-        <button id="submitPassword">Submit</button>
-        <div id="errorMessage" class="error-message"></div>
-      </div>
-    </div>
-    <div id="feedbackModal" class="modal">
-      <div class="modal-content">
-        <span class="close" id="closeFeedbackModal">&times;</span>
-        <h2 id="feedbackMessage">Feedback sent successfully !</h2>
-        <button id="closeFeedbackButton">OK</button>
-      </div>
-    </div>
-    <div class="blocker">
+    </main>
+    <footer>
         
-    </div>
-    
+    </footer>
 </body>
-<script src="trial.js"></script>
+<script src="shrine.js"></script>
 </html>
